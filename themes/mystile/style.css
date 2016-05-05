@@ -481,8 +481,8 @@ table tr td:last-child {
 /* 2.1 Containers & Columns */
 /* 2.2 Navigation */
 ul.nav li a {
-  padding: .5em 1em;
-  display: block;
+/*  padding: .5em 1em;
+  display: block;*/
 }
 #navigation {
   clear: both;
@@ -612,7 +612,7 @@ ul.nav li a {
 }
 #header hgroup {
   position: relative;
-  margin-bottom: 1.618em;
+  /*margin-bottom: 1.618em;*/
 }
 #header hgroup:after {
   content: "\0020";

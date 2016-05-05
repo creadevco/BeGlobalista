@@ -61,7 +61,8 @@ INDEX
   }
   ul.nav li a {
     display: block;
-    padding: .53em 1em;
+    margin: .53em 1em;
+    /*padding: .53em 1em;*/
   }
   ul.nav ul {
     width: 15.379em;
@@ -188,28 +189,34 @@ INDEX
     /* LEVEL 2 */
     /* LEVEL 3 */
   }
+  .menu__underline {
+    border-bottom: #ED3E01;
+  }
+  
   #header #navigation ul.nav > li a {
-    border: 1px solid #fcfcfc;
+    /*border: 1px solid #fcfcfc;*/
+    border-bottom: 4px solid #ED3E01;
     background: #fcfcfc;
     font-weight: bold;
     position: relative;
-    -webkit-border-radius: 0.236em;
+    font-size: 1.2em;
+/*    -webkit-border-radius: 0.236em;
     border-radius: 0.236em;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
-    background-clip: padding-box;
+    background-clip: padding-box;*/
   }
   #header #navigation ul.nav > li a:hover {
-    border-color: #e8e4e3;
-    background: #fff;
+    /*border-color: #e8e4e3;
+    background: #fff;*/
   }
   #header #navigation ul.nav > li:hover a {
-    border-color: #e8e4e3;
-    background: #fff;
+    /*border-color: #e8e4e3;
+    background: grey;*/
   }
   #header #navigation ul.nav > li.current-menu-item > a,
   #header #navigation ul.nav > li.current_page_item > a {
-    color: #ff4800;
+    color: #000;
   }
   #header #navigation ul.nav > li.parent a {
     -webkit-border-bottom-left-radius: 0;
@@ -575,8 +582,16 @@ INDEX
     content: "S";
   }
   #header {
-    padding-bottom: 1.618em;
-    padding-top: 3.631em;
+    /*padding-bottom: 1.618em;
+    padding-top: 3.631em;*/
+    padding: 2% 0 0 1%;
+  }
+  .us_flag {
+    width: 4%;
+    float: right;
+  }
+  .fuck {
+    margin-bottom: -26%;
   }
   #header:after {
     content: "\0020";
@@ -588,15 +603,19 @@ INDEX
   #header hgroup {
     float: left;
   }
+
+  /* general nav bar */
   #header #navigation {
-    float: right;
+    float: left;
     clear: none;
     border: 0;
     background: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
     width: auto;
+    margin: 5% 0 0 -2.5%;
   }
+  /* general nav bar */
   #main.fullwidth,
   .layout-full #main,
   .col-full,

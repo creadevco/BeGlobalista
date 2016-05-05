@@ -60,13 +60,23 @@ global $woo_options, $woocommerce;
     <?php woo_header_before(); ?>
 
 	<header id="header" class="col-full">
+		<?php 
+			$us_flag = esc_url( get_template_directory_uri() . '/images/us_flag.gif' );
+		?>
+		
+		<div class="us_flag">
 
-
+			
+			<a href="#">
+			<img src="<?php echo $us_flag ?>" class="fuck" />Inglés</a>
+		</div>
+		
 
 	    <hgroup>
 
 	    	 <?php
 			    $logo = esc_url( get_template_directory_uri() . '/images/logo.png' );
+			    
 				if ( isset( $woo_options['woo_logo'] ) && $woo_options['woo_logo'] != '' ) { $logo = $woo_options['woo_logo']; }
 				if ( isset( $woo_options['woo_logo'] ) && $woo_options['woo_logo'] != '' && is_ssl() ) { $logo = preg_replace("/^http:/", "https:", $woo_options['woo_logo']); }
 			?>
