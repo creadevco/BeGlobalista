@@ -192,7 +192,7 @@ INDEX
   .menu__underline {
     border-bottom: #ED3E01;
   }
-  
+
   #header #navigation ul.nav > li a {
     /*border: 1px solid #fcfcfc;*/
     border-bottom: 4px solid #ED3E01;
@@ -587,8 +587,9 @@ INDEX
     padding: 2% 0 0 1%;
   }
   .us_flag {
+    margin-left: 81%;
     width: 4%;
-    float: right;
+    /*float: right;*/
   }
   .fuck {
     margin-bottom: -26%;
