@@ -2082,6 +2082,11 @@ table.variations tr:last-child td,
 table.variations tr:last-child th {
   border-bottom: 0;
 }
+
+.featured_tours_banner {
+  width: 100%;
+}
+
 .images img {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */

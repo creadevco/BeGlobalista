@@ -35,8 +35,11 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
     <div id="content" class="col-full <?php if ( $woo_options[ 'woo_homepage_banner' ] == "true" ) echo 'with-banner'; ?> <?php if ( $woo_options[ 'woo_homepage_sidebar' ] == "false" ) echo 'no-sidebar'; ?>">
 
     	<?php woo_main_before(); ?>
+      <?php $featured_tours_banner = esc_url( get_template_directory_uri() . '/images/featured_tours_banner.png' ); ?>
 
-    adasd
+    <div class="">
+      <img class="featured_tours_banner" src="<?php echo $featured_tours_banner; ?>" alt="" />
+    </div>
 
 		<section id="main" class="col-left">
 
