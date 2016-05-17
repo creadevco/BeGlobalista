@@ -304,7 +304,7 @@ INDEX
   }
   .homepage-banner {
     position: relative;
-    max-width: 95.949em;
+    max-width: 86%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3.631em;
@@ -366,7 +366,7 @@ INDEX
     right: 0;
     z-index: 50;
     bottom: 0;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGAwBuKzQAwGjDAGNgGwSgwVAFCGAgUGpiTrAAAAAElFTkSuQmCC);
+    /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGAwBuKzQAwGjDAGNgGwSgwVAFCGAgUGpiTrAAAAAElFTkSuQmCC);*/
   }
   .home #content.with-banner {
     border-top: 4px double #e8e4e3;
@@ -586,14 +586,22 @@ INDEX
     padding-top: 3.631em;*/
     padding: 2% 0 0 1%;
   }
+  .top-icons {
+    display: inline-flex;
+    margin-left: 67%;
+  }
+  .login-icon {
+    display: block;
+    font-size: 2.5em;
+  }
+  .us {
+    padding-left: 15%;
+  }
   .us_flag {
-    margin-left: 81%;
-    width: 4%;
-    /*float: right;*/
+    display: block;
+    margin-top: 6%;
   }
-  .fuck {
-    margin-bottom: -26%;
-  }
+
   #header:after {
     content: "\0020";
     display: block;

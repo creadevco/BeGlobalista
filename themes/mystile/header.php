@@ -22,7 +22,9 @@ global $woo_options, $woocommerce;
 
 <title><?php woo_title(''); ?></title>
 <?php woo_meta(); ?>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" media="screen" />
+
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	wp_head();
@@ -60,23 +62,32 @@ global $woo_options, $woocommerce;
     <?php woo_header_before(); ?>
 
 	<header id="header" class="col-full">
-		<?php 
+		<?php
 			$us_flag = esc_url( get_template_directory_uri() . '/images/us_flag.gif' );
 		?>
-		
-		<div class="us_flag">
 
-			
-			<a href="#">
-			<img src="<?php echo $us_flag ?>" class="fuck" />Inglés</a>
+		<div class="top-icons">
+
+      <div class="">
+        <a href="#"><i class="fa fa-sign-in login--icon" aria-hidden="true"></i>
+          Iniciar sesión
+        </a>
+      </div>
+      <div class="us">
+        <a href="#">
+          <img src="<?php echo $us_flag ?>" class="us_flag" />
+          Inglés
+        </a>
+      </div>
+
 		</div>
-		
+
 
 	    <hgroup>
 
 	    	 <?php
 			    $logo = esc_url( get_template_directory_uri() . '/images/logo.png' );
-			    
+
 				if ( isset( $woo_options['woo_logo'] ) && $woo_options['woo_logo'] != '' ) { $logo = $woo_options['woo_logo']; }
 				if ( isset( $woo_options['woo_logo'] ) && $woo_options['woo_logo'] != '' && is_ssl() ) { $logo = preg_replace("/^http:/", "https:", $woo_options['woo_logo']); }
 			?>
