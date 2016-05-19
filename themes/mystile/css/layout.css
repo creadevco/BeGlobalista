@@ -304,10 +304,10 @@ INDEX
   }
   .homepage-banner {
     position: relative;
-    max-width: 86%;
+    max-width: 77em;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3.631em;
+    margin-bottom: 1em;
     display: block;
   }
   .homepage-banner img {
@@ -369,8 +369,11 @@ INDEX
     /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGAwBuKzQAwGjDAGNgGwSgwVAFCGAgUGpiTrAAAAAElFTkSuQmCC);*/
   }
   .home #content.with-banner {
-    border-top: 4px double #e8e4e3;
-    padding-top: 3.631em;
+    /*border-top: 4px double #e8e4e3;*/
+    /*padding-top: 3.631em;*/
+  }
+  .featured_tours_banner {
+    width: 78em;
   }
   .archive-header h1 {
     float: left;
@@ -626,15 +629,16 @@ INDEX
   }
   /* general nav bar */
   #main.fullwidth,
-  .layout-full #main,
+  .layout-full,
   .col-full,
-  .no-sidebar #main {
+  .no-sidebar {
     max-width: 75.998em;
     margin: 0 auto;
-    width: 100%;
+    width: 150%;
   }
   #main {
-    width: 69.2%;
+    width: 100em;
+    margin-left: 1.15em;
   }
   #sidebar {
     margin-top: 0;

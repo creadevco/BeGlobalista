@@ -590,8 +590,8 @@ ul.nav li a {
 /* 2.3 Header */
 #header {
   padding: 1.618em 0 0;
-  margin-bottom: 3.631em;
-  border-bottom: 4px double #e8e4e3;
+  margin-bottom: 0.631em;
+  border-bottom: 2px solid #e8e4e3;
   clear: both;
   position: relative;
 }
@@ -2081,10 +2081,6 @@ a.reset_variations:before {
 table.variations tr:last-child td,
 table.variations tr:last-child th {
   border-bottom: 0;
-}
-
-.featured_tours_banner {
-  width: 100%;
 }
 
 .images img {
