@@ -326,9 +326,9 @@ function mystile_product_categories() {
 function mystile_featured_products() {
 	global $woo_options;
 	if (class_exists('woocommerce') && $woo_options[ 'woo_homepage_featured_products' ] == "true" ) {
-		echo '<h1>'.__('werw', 'woothemes').'</h1>';
+		echo '<h1>'.__('Featured Products', 'woothemes').'</h1>';
 		$featuredproductsperpage = $woo_options['woo_homepage_featured_products_perpage'];
-		//echo do_shortcode('[featured_products per_page="'.$featuredproductsperpage.'"]');
+		echo do_shortcode('[featured_products per_page="'.$featuredproductsperpage.'"]');
 	} // End query to see if products should be displayed
 }
 
